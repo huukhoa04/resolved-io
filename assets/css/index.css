@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+}
+body{
+    
+    height: 100%;
+}
+.holder{
+    position: absolute;
+    left: -20%;
+}
+.bgm{
+    background-size: 100%;
+    width: 100%;
+    
+    position: fixed;
+}
+.content{
+    position: absolute;
+    background-color: whitesmoke;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    /* border-top-left-radius: 100px; */
+    /* border-bottom-left-radius: 100px; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+/* welcome to my portfolio */
+.title{
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-bottom: 100px;
+}
+
+.link__holder{
+    background-color: white;
+    width: 100%;
+}
+.option__component{
+    width: 100%;
+    background-color: #00BFFF;
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+.option__component i{
+    margin-left: 20px;
+    font-size: 30px;
+}
+.__label{
+    /* margin-top: 1%; */
+    font-size: 30px;
+    margin-left: 50px;
+    max-height: 50px;
+    font-weight: lighter;
+    /* padding-bottom: 20px; */
+}
+.option__component:hover{
+    background-color: #ffffff;
+    color: #00BFFF;
+    border-left: 5px solid #00BFFF;
+    animation-name: cchover;
+    animation-duration: 0.45s;
+    cursor: pointer;
+    /* transition-delay: 2s; */
+}
+@keyframes cchover{
+    from {
+        background-color: #00BFFF;
+        color: black;
+    }
+    to {
+        background-color: #ffffff;
+        color: #00BFFF;
+        border-left: 5px solid #00BFFF;
+    }
+}
+.dropdown__content{
+    /* height: 300px; */
+    display: none;
+    width: 100%;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation{
+    0% {
+        opacity: 0;
+        height: 0px;
+    }
+    
+    100% {
+        opacity: 1;
+        height: 300px;
+    }
+}

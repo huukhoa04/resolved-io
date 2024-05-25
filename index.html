@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chào mừng!</title>
+</head>
+<body>
+    <div class="holder">
+        <img class="bgm" src="./assets/img/1326562_1.png">
+    </div>
+    <div class="content">
+        <div class="title">
+            Welcome to my Portfolio!
+        </div>
+        <div class="link__holder">
+            <div class="option__component" id="com__1" onclick="showContent('1', document.getElementById('tog__value').value)">
+                <input type="hidden" name="toggle" id="tog__value" value="0">
+                <i class="fa-solid fa-chevron-right" id="icon__1"></i>
+                <div class="__label">About me</div>
+            </div>
+            <div class="dropdown__content" id="about__js">
+
+            </div>  
+            <div class="option__component" id="com__1" onclick="showContent('2', document.getElementById('tog__value1').value)">
+                <input type="hidden" name="toggle" id="tog__value1" value="0">
+                <i class="fa-solid fa-chevron-right" id="icon__2"></i>
+                <div class="__label">My SNS</div>
+            </div>
+            <div class="dropdown__content" id="sns__js">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
