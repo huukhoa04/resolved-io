@@ -16,7 +16,6 @@ body{
 .bgm{
     background-size: 100vw;
     width: 100vw;
-    
     position: fixed;
 }
 .content{
@@ -92,7 +91,7 @@ body{
 .dropdown__content{
     /* height: 300px; */
     display: none;
-    width: 100%;
+    width: auto;
     height: auto;
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
