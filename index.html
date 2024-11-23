@@ -1,74 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css" runat="server">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" runat="server" />
     <!-- <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="./assets/js/script.js"></script>
-    <link rel="shortcut icon" href="./assets/img/March_7th_Sticker_01_1.svg" type="image/svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/March_7th_Sticker_01_1.svg"
+      type="image/svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Resolved's Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="holder">
-        <img class="bgm" src="./assets/img/1326562_1.png">
-    </div>
-    <div class="content">
-        <div class="title">
-            Welcome to my Portfolio!
-        </div>
+      <img
+        class="bgm"
+        src="./assets/img/1326562_1.png"
+        id="parallax"
+        alt="Background Image"
+      />
+      <div class="content">
+        <div class="title">Welcome to my Portfolio!</div>
         <div class="link__holder">
-            <div class="option__component" id="com__1" onclick="showContent('1', document.getElementById('tog__value').value)">
-                <input type="hidden" name="toggle" id="tog__value" value="0">
-                <i class="fa-solid fa-chevron-right" id="icon__1"></i>
-                <div class="__label">About me</div>
+          <div
+            class="option__component"
+            id="com__1"
+            onclick="showContent('1', document.getElementById('tog__value').value)"
+          >
+            <input type="hidden" name="toggle" id="tog__value" value="0" />
+            <i class="fa-solid fa-chevron-right" id="icon__1"></i>
+            <div class="__label">About me</div>
+          </div>
+          <div class="dropdown__content" id="about__js">
+            <img src="./assets/img/march_7.png" class="avatar" />
+            <div class="text_content">
+              <h1>Thông tin</h1>
+              <br />
+              Tên: Nguyễn Hữu 'Resolved' Khoa<br /><br />
+              Công việc hiện tại: Sinh viên Khoa Công Nghệ Thông Tin
+              <br /><br />
+              Đại Học: Đại Học Đà Nẵng - Trường Đại Học Bách Khoa<br /><br />
             </div>
-            <div class="dropdown__content" id="about__js">
-                <img src="./assets/img/march_7.png" class="avatar">
-                <div class="line" style="margin-left: 10px; width: 600px; height: 1px; background-color: black;"></div>
-                <div class="text_content">
-                    <h1>Thông tin</h1><br>
-                    Tên: Nguyễn Hữu 'Resolved' Khoa<br><br> 
-                    Công việc hiện tại: Sinh viên Khoa Công Nghệ Thông Tin <br><br>
-                    Đại Học: Đại Học Đà Nẵng - Trường Đại Học Bách Khoa<br><br>
-                </div>
-            </div>  
-            <div class="option__component" id="com__2" onclick="showContent('2', document.getElementById('tog__value1').value)">
-                <input type="hidden" name="toggle" id="tog__value1" value="0">
-                <i class="fa-solid fa-chevron-right" id="icon__2"></i>
-                <div class="__label">My SNS</div>
-            </div>
-            <div class="dropdown__content" id="sns__js">
-                <a href="https://osu.ppy.sh/users/11901115" class="sns__item" id="osu__link">
-                    <div class="svg__logo">
-                        <img style="width: 30px; height: 30px;" src="./assets/img/Osu!_Logo_2016.svg" alt="Link to osu!" srcset="">
-                    </div>
-                    <div class="sns__content">R E S O L V E D</div>
-                </a>
-                <a href="https://www.facebook.com/resolved.man/" class="sns__item" id="facebook__link">
-                    <div class="svg__logo">
-                        <img style="width: 30px; height: 30px;" src="./assets/img/2023_Facebook_icon.svg" alt="Link to Facebook" srcset="">
-                    </div>
-                    <div class="sns__content">Nguyễn Hữu Khoa</div>
-                </a>
-                <a href="https://x.com/huukhoa004" class="sns__item" id="x__link">
-                    <div class="svg__logo">
-                        <img style="width: 30px; height: 30px;" src="./assets/img/X_logo_2023_original.svg" alt="Link to X" srcset="">
-                    </div>
-                    <div class="sns__content">/huukhoa004</div>
-                </a>
-                <a href="https://github.com/huukhoa04" class="sns__item" id="github__link">
-                    <div class="svg__logo">
-                        <img style="width: 30px; height: 30px;" src="./assets/img/Octicons-mark-github.svg" alt="Link to Facebook" srcset="">
-                    </div>
-                    <div class="sns__content">/huukhoa04</div>
-                </a>
-            </div>
+          </div>
+          <div
+            class="option__component"
+            id="com__2"
+            onclick="showContent('2', document.getElementById('tog__value1').value)"
+          >
+            <input type="hidden" name="toggle" id="tog__value1" value="0" />
+            <i class="fa-solid fa-chevron-right" id="icon__2"></i>
+            <div class="__label">My SNS</div>
+          </div>
+          <div class="dropdown__content" id="sns__js">
+            <a
+              href="https://osu.ppy.sh/users/11901115"
+              class="sns__item"
+              id="osu__link"
+            >
+              <div class="svg__logo">
+                <img src="./assets/img/Osu!_Logo_2016.svg" alt="Link to osu!" />
+              </div>
+              <div class="sns__content">R E S O L V E D</div>
+            </a>
+            <a
+              href="https://www.facebook.com/resolved.man/"
+              class="sns__item"
+              id="facebook__link"
+            >
+              <div class="svg__logo">
+                <img
+                  src="./assets/img/2023_Facebook_icon.svg"
+                  alt="Link to Facebook"
+                />
+              </div>
+              <div class="sns__content">Nguyễn Hữu Khoa</div>
+            </a>
+            <a href="https://x.com/huukhoa004" class="sns__item" id="x__link">
+              <div class="svg__logo">
+                <img
+                  src="./assets/img/X_logo_2023_original.svg"
+                  alt="Link to X"
+                />
+              </div>
+              <div class="sns__content">/huukhoa004</div>
+            </a>
+            <a
+              href="https://github.com/huukhoa04"
+              class="sns__item"
+              id="github__link"
+            >
+              <div class="svg__logo">
+                <img
+                  src="./assets/img/Octicons-mark-github.svg"
+                  alt="Link to GitHub"
+                />
+              </div>
+              <div class="sns__content">/huukhoa04</div>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
