@@ -10,7 +10,7 @@ body,
       .holder {
         position: relative;
         overflow: hidden;
-        height: 100vh;
+        min-height: 100vh;
       }
       .bgm {
         width: 100%;
